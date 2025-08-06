@@ -32,7 +32,7 @@ readme = "README.rst"
 license = {file = "LICENSE"}
 requires-python = ">=3.8"
 dependencies = [
-    "scipy<2.0.0",
+    "scipy<1.11.0",
     "numpy>=1.26.0,<3.0.0",
     "pandas>=2.2.0,<2.4.0",
     "matplotlib>=3.6.1,<3.11.0",
@@ -67,9 +67,9 @@ ultranest = ["h5py"]
 astropy = ["astropy"]
 fastkde = ["fastkde"]
 getdist = ["getdist"]
-chainconsumer = ["chainconsumer>=0.34.0"]
+chainconsumer = ["chainconsumer==0.34.0"]
 hdf5 = ["tables==3.8.0"]
-all = ["h5py", "astropy", "fastkde", "getdist", "chainconsumer", "tables"]
+all = ["h5py", "astropy", "fastkde", "getdist", "chainconsumer==0.34.0", "tables"]
 
 [project.scripts]
 anesthetic = "anesthetic.scripts:gui"
